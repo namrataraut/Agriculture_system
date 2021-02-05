@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 10, 2019 2:49:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Crop" table="crop" catalog="agricultureproject">
+        <id name="cid" type="java.lang.Integer">
+            <column name="cid" />
+            <generator class="identity" />
+        </id>
+        <property name="cname" type="string">
+            <column name="cname" length="100" />
+        </property>
+        <property name="cprice" type="string">
+            <column name="cprice" length="100" />
+        </property>
+        <property name="cquantity" type="string">
+            <column name="cquantity" length="100" />
+        </property>
+        <property name="ctype" type="string">
+            <column name="ctype" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

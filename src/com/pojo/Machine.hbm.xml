@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 10, 2019 2:49:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Machine" table="machine" catalog="agricultureproject">
+        <id name="mid" type="java.lang.Integer">
+            <column name="mid" />
+            <generator class="identity" />
+        </id>
+        <property name="mname" type="string">
+            <column name="mname" length="100" />
+        </property>
+        <property name="mdescription" type="string">
+            <column name="mdescription" length="100" />
+        </property>
+        <property name="mimage" type="string">
+            <column name="mimage" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

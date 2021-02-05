@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 10, 2019 2:49:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Fruits" table="fruits" catalog="agricultureproject">
+        <id name="fruitid" type="java.lang.Integer">
+            <column name="fruitid" />
+            <generator class="identity" />
+        </id>
+        <property name="fruitname" type="string">
+            <column name="fruitname" length="100" />
+        </property>
+        <property name="fruitquantity" type="string">
+            <column name="fruitquantity" length="100" />
+        </property>
+        <property name="fruitpriceperkg" type="string">
+            <column name="fruitpriceperkg" length="100" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="100" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 10, 2019 2:49:36 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Fertilizer" table="fertilizer" catalog="agricultureproject">
+        <id name="ferid" type="java.lang.Integer">
+            <column name="ferid" />
+            <generator class="identity" />
+        </id>
+        <property name="fername" type="string">
+            <column name="fername" length="100" />
+        </property>
+        <property name="ferdescription" type="string">
+            <column name="ferdescription" length="100" />
+        </property>
+        <property name="ferrate" type="string">
+            <column name="ferrate" length="100" />
+        </property>
+        <property name="ferquantity" type="string">
+            <column name="ferquantity" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>
